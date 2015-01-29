@@ -1,5 +1,5 @@
 # colorax
-Beauty JS &amp; SVG color wheel.
+Beauty JS color wheel with SNAP.SVG
 
 ! ATTENTION !
 Colorful and tasty.
