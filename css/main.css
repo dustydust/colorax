@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(193,193,193,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(193,193,193,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c1c1c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.radialnav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.radialnav-sector {
+  stroke: rgba(255,255,255,0.7);
+  stroke-width: 1;
+  transition: all .4s;
+}
+
+.radialnav-sector.active {
+  opacity: 0.5;
+}
+
+.radialnav-icon {
+  pointer-events: none;
+  fill: #eee;
+  transition: all .4s;
+}
+
+.radialnav-icon.active {
+  fill: #333;
+}
+
+.radialnav-hint {
+  fill: #eee;
+  font: .95em 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-anchor: middle;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all .4s;
+}
+
+.radialnav-hint.active {
+  opacity: 1;
+}
