@@ -246,8 +246,7 @@ var colorSplash = function(newColor){
   };
   setTimeout(function() { 
     gui.nav.hide();
-    
-    //rectangle.animate({fill: newColor});
+
     setTimeout(function() { 
       rectangle = gui.paper.rect(0, 0, window.innerWidth, window.innerHeight).attr({fill: newColor});
       document.getElementById('parent').appendChild(document.getElementById('radialnav'));
